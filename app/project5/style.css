@@ -1,0 +1,20 @@
+/* ScrollTriggerClamp */
+
+.clamp svg {
+  position: absolute;
+  width: 112%;
+  top: 0;
+  top: 50%;
+  transform: translateY(-50%) rotate(2deg);
+  left: -6%;
+}
+
+.heading {
+  position: relative;
+  z-index: 2;
+  mix-blend-mode: difference;
+  perspective: 1000px;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  transform: rotate(0.1deg);
+}

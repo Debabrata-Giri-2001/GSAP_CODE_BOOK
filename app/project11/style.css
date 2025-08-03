@@ -1,0 +1,32 @@
+/* project 11 */
+.header-section {
+  position: relative;
+  text-align: center;
+  margin: 100px auto 0;
+}
+
+.ball {
+  fill: #fffce1;
+  visibility: hidden;
+}
+
+.line {
+  fill: none;
+  stroke: #fffce1;
+  stroke-width: 2px;
+}
+
+text {
+  fill: #fffce1;
+  font-size: 15px;
+  visibility: hidden;
+}
+
+.theLine {
+  stroke: #fffce1;
+}
+#svg-stage {
+  max-width: 600px;
+  overflow: visible;
+  margin-top: 60vh;
+}

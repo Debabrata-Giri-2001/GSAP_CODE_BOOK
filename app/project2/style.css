@@ -1,0 +1,12 @@
+.wave {
+  --_height: 50;
+  --_count: 6;
+  --_offset: calc(var(--_height) / var(--_count) * 0.5px);
+  transform: translateY(
+    calc((var(--_height) * var(--i) / var(--_count)) * 1px - var(--_offset))
+  );
+  stroke-linecap: round;
+  fill: none;
+  transform-box: fill-box;
+  transform-origin: center;
+}
