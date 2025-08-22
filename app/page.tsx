@@ -27,7 +27,7 @@ export default function Home() {
         {/* <SmoothScrolly /> */}
         {/* <ScrollTriggerClamp /> */}
         {/* <MorphingPlayPause /> */}
-        <Airplanes />
+        {/* <Airplanes /> */}
         {/* <Loop /> */}
         {/* <SimpleParallax /> */}
         {/* <ImageComparison /> */}
@@ -37,7 +37,7 @@ export default function Home() {
         {/* <CodePenScrollMap /> */}
         {/* <DrawRandomUnderline /> */}
         {/* <InfiniteDraggableGallery /> */}
-        {/* <ImageHoverEffect />  // work on it*/}
+        {/* <ImageHoverEffect />  */}
       </main>
     </>
   );

@@ -1,64 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-html,
 body {
-  margin: 0;
-  overflow: hidden;
-  background-color: #11151c;
-  font-family: "Open Sans", sans-serif;
-  color: rgba(255, 255, 255, 0.5);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  font-family: "Libre Baskerville", serif;
 }
 
-a {
-  color: rgba(255, 255, 255, 0.5);
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-
-a:hover {
-  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
-}
-
-h1 {
-  margin: 0;
-  font-size: 0.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-  font-weight: 500;
-}
-
-.title {
+.cursor {
   position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  width: 12rem;
+  height: 12rem;
+  pointer-events: none;
+  opacity: 0;
 }
 
-.socials {
-  position: fixed;
-  bottom: 10%;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center; 
+.cursor__media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
-.icons{
+.cursor__media.active {
+  opacity: 0.8;
+}
+
+.nav {
   display: flex;
-  gap: 10px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.6rem;
 }
 
-.icons a {
-  transition: all 0.5s ease-in-out;
-  transform: scale(1);
+.nav__link {
+  position: relative;
+  color: #eff3f9;
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
-.icons a:hover {
-  transform: scale(1.2);
-  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
-}
-
-.links{
-  font-size: 0.8rem;
+.nav__link:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: -1.3rem;
+  left: 0;
+  right: 0;
+  width: 2rem;
+  height: 2px;
+  margin-inline: auto;
+  background-color: #94a3b8;
 }
